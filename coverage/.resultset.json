@@ -742,7 +742,7 @@
         null,
         null
       ],
-      "/Users/luke/epicodus/rails/portfolio/app/models/project.rb": [
+      "/Users/luke/epicodus/rails/portfolio/app/services/project.rb": [
         1,
         1,
         2,
@@ -760,6 +760,6 @@
         null
       ]
     },
-    "timestamp": 1488563593
+    "timestamp": 1488566557
   }
 }

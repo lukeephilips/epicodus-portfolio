@@ -14,7 +14,7 @@
       <img src="./assets/0.10.0/loading.gif" alt="loading"/>
     </div>
     <div id="wrapper" style="display:none;">
-      <div class="timestamp">Generated <abbr class="timeago" title="2017-03-03T09:53:13-08:00">2017-03-03T09:53:13-08:00</abbr></div>
+      <div class="timestamp">Generated <abbr class="timeago" title="2017-03-03T10:42:38-08:00">2017-03-03T10:42:38-08:00</abbr></div>
       <ul class="group_tabs"></ul>
 
       <div id="content">
@@ -171,16 +171,6 @@
       </tr>
       
       <tr>
-        <td class="strong"><a href="#4ea5fa7bf7ae26c34f3be519e3eefeb72d3ffe8d" class="src_link" title="app/models/project.rb">app/models/project.rb</a></td>
-        <td class="green strong">100.0 %</td>
-        <td>6</td>
-        <td>4</td>
-        <td>4</td>
-        <td>0</td>
-        <td>1.5</td>
-      </tr>
-      
-      <tr>
         <td class="strong"><a href="#4061e20d236eaf1caac19de9673e2ac1a4efe460" class="src_link" title="app/models/user.rb">app/models/user.rb</a></td>
         <td class="green strong">100.0 %</td>
         <td>6</td>
@@ -188,6 +178,16 @@
         <td>2</td>
         <td>0</td>
         <td>1.0</td>
+      </tr>
+      
+      <tr>
+        <td class="strong"><a href="#a9ac03594a8c47da4160894f46ed4818a881e217" class="src_link" title="app/services/project.rb">app/services/project.rb</a></td>
+        <td class="green strong">100.0 %</td>
+        <td>6</td>
+        <td>4</td>
+        <td>4</td>
+        <td>0</td>
+        <td>1.5</td>
       </tr>
       
       <tr>
@@ -1100,60 +1100,6 @@
   </pre>
 </div>
       
-        <div class="source_table" id="4ea5fa7bf7ae26c34f3be519e3eefeb72d3ffe8d">
-  <div class="header">
-    <h3>app/models/project.rb</h3>
-    <h4><span class="green">100.0 %</span> covered</h4>
-    <div>
-      <b>4</b> relevant lines. 
-      <span class="green"><b>4</b> lines covered</span> and
-      <span class="red"><b>0</b> lines missed.</span>
-    </div>
-  </div>
-  
-  <pre>
-    <ol>
-      
-        <li class="covered" data-hits="1" data-linenumber="1">
-          <span class="hits">1</span>
-          
-          <code class="ruby">class Project &lt; ApplicationRecord</code>
-        </li>
-      
-        <li class="covered" data-hits="1" data-linenumber="2">
-          <span class="hits">1</span>
-          
-          <code class="ruby">  def self.repos</code>
-        </li>
-      
-        <li class="covered" data-hits="2" data-linenumber="3">
-          <span class="hits">2</span>
-          
-          <code class="ruby">    response = RestClient.get(&quot;https://api.github.com/user/repos?access_token=#{ENV[&#39;GITHUB_TOKEN&#39;]}&amp;affiliation=owner&amp;sort=created&quot;)</code>
-        </li>
-      
-        <li class="covered" data-hits="2" data-linenumber="4">
-          <span class="hits">2</span>
-          
-          <code class="ruby">    parsed_response = JSON.parse response</code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="5">
-          
-          
-          <code class="ruby">  end</code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="6">
-          
-          
-          <code class="ruby">end</code>
-        </li>
-      
-    </ol>
-  </pre>
-</div>
-      
         <div class="source_table" id="4061e20d236eaf1caac19de9673e2ac1a4efe460">
   <div class="header">
     <h3>app/models/user.rb</h3>
@@ -1196,6 +1142,60 @@
           
           
           <code class="ruby">         :recoverable, :rememberable, :trackable, :validatable</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="6">
+          
+          
+          <code class="ruby">end</code>
+        </li>
+      
+    </ol>
+  </pre>
+</div>
+      
+        <div class="source_table" id="a9ac03594a8c47da4160894f46ed4818a881e217">
+  <div class="header">
+    <h3>app/services/project.rb</h3>
+    <h4><span class="green">100.0 %</span> covered</h4>
+    <div>
+      <b>4</b> relevant lines. 
+      <span class="green"><b>4</b> lines covered</span> and
+      <span class="red"><b>0</b> lines missed.</span>
+    </div>
+  </div>
+  
+  <pre>
+    <ol>
+      
+        <li class="covered" data-hits="1" data-linenumber="1">
+          <span class="hits">1</span>
+          
+          <code class="ruby">class Project</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="2">
+          <span class="hits">1</span>
+          
+          <code class="ruby">  def self.repos</code>
+        </li>
+      
+        <li class="covered" data-hits="2" data-linenumber="3">
+          <span class="hits">2</span>
+          
+          <code class="ruby">    response = RestClient.get(&quot;https://api.github.com/user/repos?access_token=#{ENV[&#39;GITHUB_TOKEN&#39;]}&amp;affiliation=owner&amp;sort=created&quot;)</code>
+        </li>
+      
+        <li class="covered" data-hits="2" data-linenumber="4">
+          <span class="hits">2</span>
+          
+          <code class="ruby">    parsed_response = JSON.parse response</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="5">
+          
+          
+          <code class="ruby">  end</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="6">

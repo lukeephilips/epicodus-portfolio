@@ -20,7 +20,7 @@
           <li><%= link_to "Bio", bio_index_path %></li>
           <li><a href="https://docs.google.com/document/d/1vzZAUKdMr7QKettdcXkmxtvXX_qLqo3tYHcDL0EaLu4/pub">Resume</a></li>
           <li><a href="https://www.linkedin.com/in/luke-philips">LinkedIn</a></li>
-          <% if user_signed_in? %><li><%= link_to "sign out", destroy_user_session_path %></li><% end %>
+          <% if user_signed_in? %><li><%= link_to "sign out", destroy_user_session_path, method: 'delete' %></li><% end %>
         </ul>
 
         <ul id="nav-mobile" class="side-nav">
@@ -28,7 +28,7 @@
           <li><%= link_to "Bio", bio_index_path %></li>
           <li><a href="https://docs.google.com/document/d/1vzZAUKdMr7QKettdcXkmxtvXX_qLqo3tYHcDL0EaLu4/pub">Resume</a></li>
           <li><a href="https://www.linkedin.com/in/luke-philips">LinkedIn</a></li>
-          <% if user_signed_in? %><li><%= link_to "sign out", destroy_user_session_path %></li><% end %>
+          <% if user_signed_in? %><li><%= link_to "sign out", destroy_user_session_path, method: 'delete' %></li><% end %>
         </ul>
         <a href="#" data-activates="nav-mobile" class="button-collapse"><i class="material-icons">menu</i></a>
       </div>
