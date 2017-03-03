@@ -1,11 +1,13 @@
-<div class="container">
-  <h3>Projects</h3>
-  <hr>
-  <br>
-  <% @projects.each do |project| %>
-    <h5>Name: <%= link_to project['name'], project['html_url'] %></h5>
-    <p>Description: <%= project['description'] %></p>
-    <br>
+<div class="container row">
+  <div class="col s6">
+    <h3>Check out my repos on GitHub!</h3>
     <hr>
-  <% end %>
+    <br>
+    <% @projects.each do |project| %>
+      <h5>Name: <%= link_to project['name'], project['html_url'] %></h5>
+      <p>Description: <%= project['description'] %></p>
+      <br>
+      <hr>
+    <% end %>
+  </div>
 </div>

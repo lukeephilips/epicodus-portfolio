@@ -1,27 +1,4 @@
-  <div class="navbar-fixed">
-  <nav class="blue-grey darken-4" role="navigation">
-    <div class="nav-wrapper container">
-      <a id="logo-container" href="#" class="brand-logo">Luke Philips</a>
-      <ul class="right hide-on-med-and-down">
-        <li><%= link_to 'Projects', projects_path %></li>
-        <li> <%= link_to "Bio", bio_index_path %></li>
-        <li><a href="https://docs.google.com/document/d/1vzZAUKdMr7QKettdcXkmxtvXX_qLqo3tYHcDL0EaLu4/edit?usp=sharing">Resume</a></li>
-        <li><a href="https://www.linkedin.com/in/luke-philips-819a822b">LinkedIn</a></li>
-        <% if user_signed_in? %><li><%= link_to "sign out", destroy_user_session_path %></li><% end %>
-      </ul>
 
-      <ul id="nav-mobile" class="side-nav">
-        <li><a href="#">Projects</a></li>
-        <li><a href="#">Bio</a></li>
-        <li><a href="https://docs.google.com/document/d/1vzZAUKdMr7QKettdcXkmxtvXX_qLqo3tYHcDL0EaLu4/edit?usp=sharing">Resume</a></li>
-        <li><a href="https://www.linkedin.com/in/luke-philips-819a822b">LinkedIn</a></li>
-        <% if user_signed_in? %><li><%= link_to "sign out", destroy_user_session_path %></li><% else %><h1>blorg</h1><% end %>
-
-      </ul>
-      <a href="#" data-activates="nav-mobile" class="button-collapse"><i class="material-icons">menu</i></a>
-    </div>
-  </nav>
-</div>
 <!-- Headline -->
   <div id="index-banner" class="parallax-container">
     <div class="section no-pad-bot valign-wrapper">
@@ -193,9 +170,3 @@
 
     </div>
   </div>
-
-  <footer class="page-footer blue-grey darken-4">
-    <div class="footer-right">
-      <a href="https://www.linkedin.com/in/luke-philips-819a822b">Connect with me on LinkedIn</a>
-    </div>
-  </footer>

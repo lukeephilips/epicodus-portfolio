@@ -16,11 +16,13 @@
  @import "materialize";
  @import url('https://fonts.googleapis.com/css?family=Arvo');
 
-
+.link-icon{
+  height: 50px;
+}
  .card-content {
    height: 150px;
  }
- 
+
  body  {
  background: #263238;
  color: white;
@@ -86,3 +88,12 @@
  .footer-right {
    float: right;
  }
+ body {
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+}
+
+main {
+  flex: 1 0 auto;
+}

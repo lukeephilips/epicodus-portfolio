@@ -10,6 +10,42 @@
   </head>
 
   <body>
+    <header>
+    <div class="navbar-fixed">
+    <nav class="blue-grey darken-4" role="navigation">
+      <div class="nav-wrapper container">
+        <a id="logo-container" href="/" class="brand-logo">Luke Philips</a>
+        <ul class="right hide-on-med-and-down">
+          <li><%= link_to 'Projects', projects_path %></li>
+          <li><%= link_to "Bio", bio_index_path %></li>
+          <li><a href="https://docs.google.com/document/d/1vzZAUKdMr7QKettdcXkmxtvXX_qLqo3tYHcDL0EaLu4/pub">Resume</a></li>
+          <li><a href="https://www.linkedin.com/in/luke-philips">LinkedIn</a></li>
+          <% if user_signed_in? %><li><%= link_to "sign out", destroy_user_session_path %></li><% end %>
+        </ul>
+
+        <ul id="nav-mobile" class="side-nav">
+          <li><%= link_to 'Projects', projects_path %></li>
+          <li><%= link_to "Bio", bio_index_path %></li>
+          <li><a href="https://docs.google.com/document/d/1vzZAUKdMr7QKettdcXkmxtvXX_qLqo3tYHcDL0EaLu4/pub">Resume</a></li>
+          <li><a href="https://www.linkedin.com/in/luke-philips">LinkedIn</a></li>
+          <% if user_signed_in? %><li><%= link_to "sign out", destroy_user_session_path %></li><% end %>
+        </ul>
+        <a href="#" data-activates="nav-mobile" class="button-collapse"><i class="material-icons">menu</i></a>
+      </div>
+    </nav>
+  </div>
+  </header>
+  <main>
     <%= yield %>
+  </main>
+  <footer class="page-footer blue-grey darken-4">
+    <div class="footer-copyright">
+      <div class="container">
+        <div class="right">
+          <%= link_to image_tag("linkedin.png", class: "link-icon"), "https://www.linkedin.com/in/luke-philips" %>
+          <%= link_to image_tag("github.png", class: "link-icon"), "http://www.github.com/lukeephilips" %>
+        </div>
+      </div>
+  </footer>
   </body>
 </html>
