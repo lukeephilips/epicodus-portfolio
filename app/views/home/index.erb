@@ -7,7 +7,7 @@
         <li> <%= link_to "Bio", bio_index_path %></li>
         <li><a href="https://docs.google.com/document/d/1vzZAUKdMr7QKettdcXkmxtvXX_qLqo3tYHcDL0EaLu4/edit?usp=sharing">Resume</a></li>
         <li><a href="https://www.linkedin.com/in/luke-philips-819a822b">LinkedIn</a></li>
-
+        <% if user_signed_in? %><li><%= link_to "sign out", destroy_user_session_path %></li><% else %>blorg<% end %>
       </ul>
 
       <ul id="nav-mobile" class="side-nav">
@@ -15,7 +15,7 @@
         <li><a href="#">Bio</a></li>
         <li><a href="https://docs.google.com/document/d/1vzZAUKdMr7QKettdcXkmxtvXX_qLqo3tYHcDL0EaLu4/edit?usp=sharing">Resume</a></li>
         <li><a href="https://www.linkedin.com/in/luke-philips-819a822b">LinkedIn</a></li>
-        <li> <% if current_user %> <%= link_to "sign out", destroy_user_session_path %><% end %></li>
+        <% if user_signed_in? %><li><%= link_to "sign out", destroy_user_session_path %></li><% else %><h1>blorg</h1><% end %>
 
       </ul>
       <a href="#" data-activates="nav-mobile" class="button-collapse"><i class="material-icons">menu</i></a>
