@@ -7,7 +7,7 @@
         <li> <%= link_to "Bio", bio_index_path %></li>
         <li><a href="https://docs.google.com/document/d/1vzZAUKdMr7QKettdcXkmxtvXX_qLqo3tYHcDL0EaLu4/edit?usp=sharing">Resume</a></li>
         <li><a href="https://www.linkedin.com/in/luke-philips-819a822b">LinkedIn</a></li>
-        <% if user_signed_in? %><li><%= link_to "sign out", destroy_user_session_path %></li><% else %>blorg<% end %>
+        <% if user_signed_in? %><li><%= link_to "sign out", destroy_user_session_path %></li><% end %>
       </ul>
 
       <ul id="nav-mobile" class="side-nav">
@@ -76,13 +76,6 @@
 
 <!-- Selected Projects -->
   <div class="parallax-container valign-wrapper">
-    <!-- <div class="section no-pad-bot">
-      <div class="container">
-        <div class="row center">
-          <h5 class="header col s12 light">Seasoned Professional with tech experience</h5>
-        </div>
-      </div>
-    </div> -->
     <div class="parallax"><%= image_tag "background2.jpg" %></div>
   </div>
 
