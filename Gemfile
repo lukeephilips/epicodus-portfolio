@@ -57,3 +57,5 @@ gem "devise"
 gem "rest-client"
 gem "dotenv-rails"
 gem 'materialize-sass'
+gem 'rails_admin', '~> 1.0'
+# gem 'cancancan'
