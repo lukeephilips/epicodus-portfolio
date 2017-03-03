@@ -14,7 +14,7 @@
     <div class="navbar-fixed">
     <nav class="blue-grey darken-4" role="navigation">
       <div class="nav-wrapper container">
-        <a id="logo-container" href="/" class="brand-logo">Luke Philips</a>
+        <%= link_to 'Luke Philips', root_path, class: 'brand-logo', id: "logo-container" %>
         <ul class="right hide-on-med-and-down">
           <li><%= link_to 'Projects', projects_path %></li>
           <li><%= link_to "Bio", bio_index_path %></li>

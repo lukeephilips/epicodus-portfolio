@@ -15,11 +15,3 @@
 //= require turbolinks
 //= require_tree .
 //= require materialize-sprockets
-
-  $(function(){
-
-    $('.button-collapse').sideNav();
-    $('.parallax').parallax();
-    $('.scrollspy').scrollSpy();
-
-  });
