@@ -1,0 +1,206 @@
+  <div class="navbar-fixed">
+  <nav class="blue-grey darken-4" role="navigation">
+    <div class="nav-wrapper container">
+      <a id="logo-container" href="#" class="brand-logo">Luke Philips</a>
+      <ul class="right hide-on-med-and-down">
+        <li><a href="#">Projects</a></li>
+        <li><a href="#">Bio</a></li>
+        <li><a href="https://docs.google.com/document/d/1vzZAUKdMr7QKettdcXkmxtvXX_qLqo3tYHcDL0EaLu4/edit?usp=sharing">Resume</a></li>
+        <li><a href="https://www.linkedin.com/in/luke-philips-819a822b">LinkedIn</a></li>
+
+      </ul>
+
+      <ul id="nav-mobile" class="side-nav">
+        <li><a href="#">Projects</a></li>
+        <li><a href="#">Bio</a></li>
+        <li><a href="https://docs.google.com/document/d/1vzZAUKdMr7QKettdcXkmxtvXX_qLqo3tYHcDL0EaLu4/edit?usp=sharing">Resume</a></li>
+        <li><a href="https://www.linkedin.com/in/luke-philips-819a822b">LinkedIn</a></li>
+      </ul>
+      <a href="#" data-activates="nav-mobile" class="button-collapse"><i class="material-icons">menu</i></a>
+    </div>
+  </nav>
+</div>
+<!-- Headline -->
+  <div id="index-banner" class="parallax-container">
+    <div class="section no-pad-bot valign-wrapper">
+      <div class="container">
+        <div class="row center">
+          <h4 class="header col s12 valign">Junior web developer with background in Product and Customer Success</h4>
+          <img src="" alt="">
+        </div>
+      </div>
+    </div>
+    <div class="parallax"><%= image_tag "background3.jpg" %></div>
+  </div>
+
+<!-- Splash -->
+  <div class="container">
+    <div class="section">
+      <!--   Icon Section   -->
+      <div class="row">
+        <div class="col s12 m4">
+          <div class="icon-block">
+            <h2 class="center white-text"><i class="material-icons">code</i></h2>
+            <h5 class="center">Full stack experience</h5>
+            <ul>
+              <li>Responsive Design</li>
+
+              <li>JavaScript: Angular 2, Ember, Node</li>
+              <li>Ruby: Rails, Sinatra, Testing</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="col s12 m4">
+          <div class="icon-block">
+            <h2 class="center brown-text"><i class="material-icons">person_pin</i></h2>
+            <h5 class="center">Customer Success experience</h5>
+
+            <p class="light">I led the Customer Success team at TalentBin. I focus on making easy to use features that match user expectations.</p>
+          </div>
+        </div>
+
+        <div class="col s12 m4">
+          <div class="icon-block">
+            <h2 class="center brown-text"><i class="material-icons">dashboard</i></h2>
+            <h5 class="center">Product experience</h5>
+            <p class="light">I have PM experience with several product launches both at TalentBin and as a contractor.</p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+<!-- Selected Projects -->
+  <div class="parallax-container valign-wrapper">
+    <!-- <div class="section no-pad-bot">
+      <div class="container">
+        <div class="row center">
+          <h5 class="header col s12 light">Seasoned Professional with tech experience</h5>
+        </div>
+      </div>
+    </div> -->
+    <div class="parallax"><%= image_tag "background2.jpg" %></div>
+  </div>
+
+  <div class="container">
+    <div class="section">
+      <div class="row center">
+        <h4 class="header col s12 dark">Selected Projects</h4>
+      </div>
+          <!--   Icon Section   -->
+          <div class="row">
+            <div class="col s12 m3">
+              <div class="card sticky-action blue-grey darken-2">
+                <div class="card-image waves-effect waves-block waves-light">
+                  <%= image_tag "kongsweeper.png", class:"activator" %>
+                </div>
+                <div class="card-content activator">
+                  <span class="card-title grey-text text-darken-4">KongSweeper<i class="material-icons right">more_vert</i></span>
+                  <p>DonkeyKong Minesweeper</p>
+                </div>
+                <div class="card-reveal blue-grey darken-2">
+                  <span class="card-title grey-text text-darken-4">KongSweeper<i class="material-icons right">close</i></span>
+                  <p>DonkeyKong themed Minesweeper like game with sweet custom 8 bit tile graphics. Made with vanilla JavaScript and Bootstrap.</p>
+                </div>
+                <div class="card-action">
+                  <a href="https://github.com/lukeephilips/kongsweeper">Code</a>
+                  <a href="https://lukeephilips.github.io/KongSweeper/">Live</a>
+                </div>
+              </div>
+            </div>
+
+            <div class="col s12 m3">
+              <div class="card sticky-action">
+                <div class="card-image waves-effect waves-block waves-light">
+                  <%= image_tag "twit.png", class: "activator" %>
+                </div>
+                <div class="card-content activator">
+                  <span class="card-title grey-text text-darken-4">Tweetamir Putin<i class="material-icons right">more_vert</i></span>
+                  <p>Translate tweets into emojis or Russian.</p>
+                </div>
+                <div class="card-reveal blue-grey darken-2">
+                  <span class="card-title grey-text text-darken-4">Tweetamir Putin<i class="material-icons right">close</i></span>
+                  <p>Translate any Twitter feed or user input text into English, Spanish, Japanese, Russian or Emojis. Emoji translations made with a custom matching algorithm. Made with Ruby on Sinatra, using the Twitter and Google Translate APIs, ActiveRecord and Materialize.</p>
+                </div>
+                <div class="card-action">
+                  <a href="https://github.com/lukeephilips/emojify">Code</a>
+                  <a href="https://twittamir-putin.herokuapp.com">Live</a>
+                </div>
+              </div>
+            </div>
+
+            <div class="col s12 m3">
+              <div class="card sticky-action">
+                <div class="card-image waves-effect waves-block waves-light">
+                  <%= image_tag "streamsearch cropped.png", class: "activator" %>
+                </div>
+                <div class="card-content activator">
+                  <span class="card-title grey-text text-darken-4">StreamSearch<i class="material-icons right">more_vert</i></span>
+                  <p>Browse and search multiple streaming sites at once</p>
+                </div>
+                <div class="card-reveal blue-grey darken-2">
+                  <span class="card-title grey-text text-darken-4">StreamSearch<i class="material-icons right">close</i></span>
+                  <p>Search accross Netflix, Amazon, Hulu and HBO GO to find movies that are currently streaming on whichever services you have. Made with Angular 2, Sass, TMDB API, GuideBox API, Firebase, TypeScript.</p>
+                </div>
+                <div class="card-action">
+                  <a href="https://github.com/lukeephilips/blank-and-chill">Code</a>
+                  <a href="https://stream-search-a433f.firebaseapp.com">Live</a>
+                </div>
+              </div>
+            </div>
+            <div class="col s12 m3">
+              <div class="card sticky-action">
+                <div class="card-image waves-effect waves-block waves-light">
+                  <%= image_tag "valhalla1.png", class: "activator" %>
+                </div>
+                <div class="card-content activator">
+                  <span class="card-title grey-text text-darken-4">VALHALLA<i class="material-icons right">more_vert</i></span>
+                  <p>Snowboarding gear ecommerce site</p>
+                </div>
+                <div class="card-reveal blue-grey darken-2">
+                  <span class="card-title grey-text text-darken-4">VALHALLA<i class="material-icons right">close</i></span>
+                  <p>Browse the online storefront for gear and pay with a credit card. Made with Ruby on Rails, Ajax, Sass, ActiveRecord, credit card payments with Stripe, authentication with Devise, hosted images with Paperclip and S3.</p>
+                </div>
+                <div class="card-action">
+                  <a href="https://github.com/lukeephilips/valhalla">Code</a>
+                  <a href="https://shielded-reef-78123.herokuapp.com">Live</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+  <div class="parallax-container valign-wrapper">
+    <!-- <div class="section no-pad-bot">
+      <div class="container">
+        <div class="row center">
+          <h5 class="header col s12 light">Comfortable in both the front and back end</h5>
+        </div>
+      </div>
+    </div> -->
+    <div class="parallax"><%= image_tag "background1.jpg" %></div>
+  </div>
+
+  <div class="container">
+    <div class="section">
+
+      <div class="row">
+        <div class="col s12 center">
+          <h3><i class="mdi-content-send brown-text"></i></h3>
+          <h4>About Me</h4>
+          <p>I am a junior software developer in Portland, OR. I am currently enrolled at Epicodus: a six month, fulltime coding bootcamp focused on JavaScript and Ruby on Rails. <hr>
+          I am interested in junior roles at small to medium sized tech companies with good opportunities to learn new skills and move further into backend development.
+          See <a href="https://docs.google.com/document/d/1vzZAUKdMr7QKettdcXkmxtvXX_qLqo3tYHcDL0EaLu4/edit?usp=sharing">my resume</a> for more information. </p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <footer class="page-footer blue-grey darken-4">
+    <div class="footer-right">
+      <a href="https://www.linkedin.com/in/luke-philips-819a822b">Connect with me on LinkedIn</a>
+    </div>
+  </footer>
